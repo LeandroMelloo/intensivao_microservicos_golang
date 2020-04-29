@@ -28,9 +28,7 @@ func init() {
 }
 
 func loadPrducts() []Product {
-	url := productsUrl + "/products"
-	response, err := http.Get(url)
-
+	response, err := http.Get(productsUrl + "/products")
 	if err != nil {
 		fmt.Println("Erro de HTTP")
 	}
@@ -44,8 +42,8 @@ func loadPrducts() []Product {
 
 func main() {
 	r := mux.NewRouter()
-	r.HandleFunc("/catalog/products", ListProducts)
-	r.HandleFunc("/catalog/product/{id}", ShowProduct)
+	r.HandleFunc("/", ListProducts)
+	r.HandleFunc("/product/{id}", ShowProduct)
 	http.ListenAndServe(":8081", r)
 }
 

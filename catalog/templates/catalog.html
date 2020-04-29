@@ -1,22 +1,18 @@
-<!DOCTYPE HTML>
-<html lang="pt-br">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <meta charset="UTF-8">
     <title>Catalog</title>
 </head>
-
 <body>
 
-    <h1>Products</h1>
+<h1>Products</h1>
 
-    <ul>
-        {{range .}}
+<ul>
+    {{range .}}
         <li>{{.Product}} - R$ {{.Price}}</li>
-        {{end}}
-    </ul>
+    {{end}}
+</ul>
 
 </body>
-
 </html>
