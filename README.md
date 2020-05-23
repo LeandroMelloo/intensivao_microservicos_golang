@@ -1,2 +1,2 @@
-# intensivao_microservicos_golang
+# intensivao-microservicos-golang
 Intensivão Microserviços Golang
